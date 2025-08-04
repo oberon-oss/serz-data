@@ -14,13 +14,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>eu.oberon.oss.ts</groupId>
             <artifactId>serz-data-io</artifactId>
+            <groupId>${project.groupId}</groupId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
-            <groupId>eu.oberon.oss.ts</groupId>
             <artifactId>serz-defs</artifactId>
+            <groupId>${project.groupId}</groupId>
             <version>${project.version}</version>
         </dependency>
 
