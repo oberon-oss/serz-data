@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>eu.oberon.oss</groupId>
+        <artifactId>bom-21</artifactId>
+        <version>1.21.1</version>
+    </parent>
+
+
+    <groupId>eu.oberon.oss.ts</groupId>
+    <artifactId>serz-data</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>serz-data-cli</module>
+        <module>serz-data-io</module>
+        <module>coverage</module>
+        <module>serz-defs</module>
+    </modules>
+
+
+    <repositories>
+        <repository>
+            <id>github-public</id>
+            <url>https://public:&#103;hp_UCA2P3c85UHJAXAbYpvrdO75dy6CSz1Yqby2@maven.pkg.github.com/oberon-oss/*</url>
+        </repository>
+    </repositories>
+
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
+    </build>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>eu.oberon.oss.tools</groupId>
+                <artifactId>simple-message-handling</artifactId>
+                <version>1.1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
